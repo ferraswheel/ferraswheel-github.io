@@ -234,6 +234,19 @@ iframe{
 	margin-left: 0;
 	/* margin: 40px; */
 }
+
+.cst-338-final-project-pp{
+			width:60%;
+	margin: 50px auto;
+
+}
+
+.cst-338-final-project-pp iframe{
+
+		max-height: 600px;
+}
+
+
 div.about-me p.emojis{
 	font-size:48px; 
 	text-align: center; 
