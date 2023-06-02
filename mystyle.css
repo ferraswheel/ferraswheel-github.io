@@ -257,6 +257,9 @@ iframe{
 }
 
 
+
+
+
 div.about-me p.emojis{
 	font-size:48px; 
 	text-align: center; 
@@ -283,7 +286,7 @@ div.margin-top p{
   margin-right: 0px;
 }
   
-	iframe, .cst-338-final-project-pp{
+	iframe, .cst-338-final-project-pp, .pdf{
 		width: 100%;
 	}
 	.pic-of-me img, img{
