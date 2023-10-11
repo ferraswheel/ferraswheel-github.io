@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="mystyle.css">
+  <link rel="stylesheet" href="style/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Quicksand&display=swap" rel="stylesheet">
@@ -14,117 +14,117 @@
 <div class="nav-bar">
 	<ul>
 		<li style="float:left"><a href="#bookmark-top">TOP OF PORTFOLIO</a></li>
-		<li><a href="#bookmark-1">LIVE WEBSITES</a></li>
-		<li><a href="#bookmark-4">ALGORITHMS PROGRAM</a></li>
-		<li><a href="#bookmark-2">DATABASE PROJECT</a></li>
-		<li><a href="#bookmark-3">DATA SCIENCE PROJECT</a></li>
-		<li><a href="#bookmark-1-0">ANDROID APPLICATION</a></li>		
-<!-- 		<li><a href="#bookmark-top">TOP OF PAGE</a></li> -->
+		<li id="menu-icon" onclick="openCloseMenu()"><a>+</a></li>
+		<li id="nav-menu-spacer" class="nav-item"><a>Test</a></li>
+		<li class="nav-item"><a onclick="openCloseMenu()" href="#bookmark-1">LIVE WEBSITES</a></li>
+		<li class="nav-item"><a onclick="openCloseMenu()" href="#bookmark-4">ALGORITHMS</a></li>
+		<li class="nav-item"><a onclick="openCloseMenu()" href="#bookmark-2">DATABASE</a></li>
+		<li class="nav-item"><a onclick="openCloseMenu()" href="#bookmark-3">DATA SCIENCE</a></li>
+		<li class="nav-item"><a onclick="openCloseMenu()" href="#bookmark-1-0">ANDROID</a></li>
+		<li class="nav-item"><a onclick="openCloseMenu()" href="#bookmark-myplanner-garden">WEB</a></li>
+		
+		<!-- <li id="menu-icon" onclick="openCloseMenu()"><a>+</a></li> -->
 	</ul>
 </div>
+
 	<div id="bookmark-top" class="space"></div>
 	<div class="about-me">
 		<div class="about-me-info"><h1>Sabrina Ferras</h1>
-			<p class="links-info"><a href = "mailto:sferras@csumb.edu">sferras@csumb.edu</a> | <a href = "https://www.linkedin.com/in/sabrina-ferras-719b4521b/">LinkedIn</a></p>
-			<p>The projects below where done either in my classes, internship, or for the non-profits I am involved in. I am currently in my senior year at CSUMB to get my bachelor’s in computer science with a focus on software development. I also working as a teaching assistant (TA) for two classes: Introduction to Database Structures and Introduction to Data Science. Last semester I was also the TA for Design & Analysis of Algorithms. I really enjoy learning new things, and I am excited to continue gaining more experience.</p>
-					<p class="emojis">
-		&#127804; &#128512; &#128516; &#127803; 
-		</p>	
+			<p class="links-info"></p>
+			<p>Projects below were done either in my internship, classes, or the non-profits I am involved in. Recent graduate, B.S. Computer Science with an emphasis on software development from California State University. Last work expirience was as a teaching assistant (TA) for classes: Introduction to Database Systems, Design & Analysis of Algorithms, and Introduction to Data Science. I really enjoy learning new things, and I am excited to continue gaining more experience.</p>
+					
+		<div class="social-links">
+		<a href="https://www.linkedin.com/in/sferras/" target="_blank"><img src="img/linkedin-app-icon.png" alt="linedin-logo"></a>
+		<a href="https://github.com/sabrinafair" target="_blank"><img src="img/github-icon.png" alt="github-logo"></a>
+		<a href="mailto:sferras@csumb.edu" target="_blank"><img src="img/pink-mail-icon.png" alt="mail-logo"></a>
+		</div>
+			
 		</div>
 		<div class="pic-of-me">
-		<img src="imgs/pic-of-meee.jpg" alt="Picture of Sabrina">
+		<img src="img/my_picture.jpg" alt="Picture of Sabrina">
 		</div>
 	</div>
-<div class="ed-project">
 	
-	<div id="bookmark-1-0" class="bookmarks-1"></div>
-	<div class="ed-project-description">
-		<h4>This is my final project from my Software Design class at CSUMB</h4>
+	
+<div class="projects">
+
+<div id="bookmark-myplanner-garden" class="bookmarks"></div>
+<div class="project-description">
+		<h4>Capstone Project: Gardening Web Application</h4>
+		<p>For my final capstone project I was able to work with web technologies JSON, REST, and JavaScript. As a co-creator for the web application MyPlanner.garden, I made a Plant API for users to access our plant database, using their generated token. Working with a teammate on this project we were able use GitHub to put into practice the code review practices we learned in our Software Engineering class.</p>
+</div>
+<iframe class="video" style='aspect-ratio:16/9' src="https://www.youtube.com/embed/qgiaHZmNq-w?si=fyMR7--RbQr_HXk3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+	
+	<div id="bookmark-1-0" class="bookmarks"></div>
+	<div class="project-description">
+		<h4>Final project from my Software Design class at CSUMB</h4>
 		<p>The powerpoint below, which I made with Microsoft's PowerPoint, shows the application I made. This app is made to be able to share and find pets who need a home. Throughout the app there are pop-ups indicating success or indicating that more information is needed. I used a few recycler views for some of the lists as well as utilizing Android Studio's SQLite to keep and retrieve information of users, pets, requests, reports, and messages.</p>
 	</div>
 	
-	<div class="cst-338-final-project-pp"><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTWZUxIcnu_sValD5aeBuG6eKKl6FWB3dpE1GiStCXbk9iSPMLDOiBBERx_It-qMsFnfjqgbzxcPx6m/embed?start=false&loop=false&delayms=3000" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>	<div class="ed-project-description"></div>
+	<div class="cst-338-final-project-pp"><iframe class="project-display" src="https://docs.google.com/presentation/d/e/2PACX-1vTWZUxIcnu_sValD5aeBuG6eKKl6FWB3dpE1GiStCXbk9iSPMLDOiBBERx_It-qMsFnfjqgbzxcPx6m/embed?start=false&loop=false&delayms=3000" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>	
 	</div>
 	
 
-<div id="bookmark-3" class="bookmarks-1"></div>	
-<div class="destiny-project">
+<div id="bookmark-3" class="bookmarks"></div>	
+<div class="project-description">
 		<h4>Final Project for Introduction to Data Science</h4>
 		<p>This is the report for the final project in my data science class where we used data exploration techniques, created visualizations, and machine learning to predict the genre of songs given certain features.</p>	
-	<object class="pdf" data="media/cst383projectreport.pdf" type="application/pdf" width="75%" height="700px">
-      <p>Unable to display PDF file. <a href="media/cst383projectreport.pdf">Download</a> instead.</p>
-    </object>
 </div>
+
+<object data="media/cst383projectreport.pdf" type="application/pdf" width="75%" height="700px">
+      <p>Unable to display PDF file. 
+	  <a href="media/cst383projectreport.pdf">Download</a> instead.</p>
+</object>
+
 	
 
-<div id="bookmark-2" class="bookmarks-1"></div>	
-<div class="destiny-project">
+<div id="bookmark-2" class="bookmarks"></div>	
+<div class="project-description">
 		<h4>Final Project for Introduction to Database Systems</h4>
-		<p>This is the report for me and my teammate’s final project where we created a relational database for a pharmacy chain. This gave us great experience with entity-relationship model, spring-boot server, and Java for the backend.</p>	
+		<p>This is the report for me and my teammate’s final project where we created a relational database for a pharmacy chain. This gave us great experience with entity-relationship model, spring-boot server, and Java for the backend.</p>
+</div>		
 	<object class="pdf" data="media/cst363projectreport.pdf" type="application/pdf" width="75%" height="700px">
       <p>Unable to display PDF file. <a href="media/cst363projectreport.pdf">Download</a> instead.</p>
     </object>
-</div>
 
 
-<div id="bookmark-4" class="bookmarks-1"></div>	
-<div class="destiny-project">
+
+<div id="bookmark-4" class="bookmarks"></div>	
+<div class="project-description">
 		<h4>Design and Analysis of Algorithms: Technical Program Assignment (Max) Heap</h4>
 		<p>Written in C++ this program takes input array and commands like “deleteMax”, “input #”, and “display.” If array is not a max heap, it will transform it into one as well as preform the given commands.</p>	
-
-	<iframe src="https://gitfront.io/r/user-8073338/rQSzyDoCc3HM/maxHeap/blob/maxHeap.cpp" title="Max Heap Program">
-		</iframe>
 </div>
+	<iframe class="project-display" src="https://gitfront.io/r/user-8073338/rQSzyDoCc3HM/maxHeap/blob/maxHeap.cpp" title="Max Heap Program">
+		</iframe>
 
-<div id="bookmark-1" class="bookmarks-1"></div>
-<div class="destiny-project">
+
+<div id="bookmark-1" class="bookmarks"></div>
+<div class="project-description">
 		<h4>Live Websites</h4>
 		<p>Worked with two non-profits to help them get websites up and running. Utilizing different templates through WordPress to make updates and/or additions simple for future volunteers. Used CSS and HTML when necessary. Connected to PayPal and Stripe for donations.</p>
-  <h3>Frontline Medics</h3>
-  <iframe src="https://frontlinemedics.org/" title="Healy-Frequencies of Love">
-		</iframe>
-  <h3>Smiles for Seniors</h3>
-		<iframe src="https://smiles4seniors.org/" title="Healy-Frequencies of Love">
-		</iframe>
-	</div>
+</div>
+
+	<h3 class="subtitle">Frontline Medics</h3>
+	<iframe class="project-display" src="https://frontlinemedics.org/" title="Healy-Frequencies of Love">
+	</iframe>
+	<h3 class="subtitle">Smiles for Seniors Foundation</h3>
+	<iframe class="project-display" src="https://smiles4seniors.org/" title="Healy-Frequencies of Love">
+	</iframe>
+
   
-<div class="destiny-project">
-		<h4>This is the website Frequencies of Love-Destiny Lucas (resize browser to see responsiveness)</h4>
-		<p>Some things I did for this project were updating the navigation bar, making the website html5 compliant, fixing a lot of the spacing issues, making picture of Destiny everywhere clickable and to indicate that it is, and updating the format of the Contact page with more style and space for Destiny's bio</p>
-		<iframe src="https://frequenciesoflove.net/" title="Healy-Frequencies of Love">
+<div class="project-description">
+		<h4>This is the website Frequencies of Love-Destiny Lucas</h4>
+		<p>During my web development internship, I updated the navigation bar, made the website html5 compliant, fixing spacing issues. I made picture of Destiny clickable everywhere and updated the format of the Contact page with more stylistic including Destiny's bio</p>
+</div>		
+	<iframe class="project-display" src="https://frequenciesoflove.net/" title="Healy-Frequencies of Love">
 		</iframe>
-	</div>
 
-
-	
-<!-- <div id="bookmark-2" class="bookmarks-2"></div> -->
-	<!-- <div class="ed-project-description"> -->
-		<!-- <h4>This is the website I was working on for Your Consulting Team-Edward Papp</h4> -->
-		<!-- <p>I worked on making each page responsive. Being sure to have the font size get smaller, but not too small. Also getting the navigation buttons to line up the same on each page and transition well when the screen size shrinks. Got the background picture to look good when resizing as well. In additon I made some corrections to make sure all the pages were html5 compliant </p> -->
-	<!-- </div> -->
-	<!-- <div class="img-container"> -->
-		<!-- <div class="ed-project-pics1"><img src="imgs/ed-home-pg-large.png" alt=""></div> -->
-		<!-- <div class="ed-project-pics2"><img src="imgs/ed-home-pg-small.png" alt=""></div> -->
-	<!-- </div> -->
-	<!-- <div class="ed-project-description"><p>Here I made a contact area, following the guide from codingLab, using google I was able to make it to send the messages directly to my email. I also created a powerpoint step by step on the process of doing that. </p> -->
-	<!-- </div> -->
-	<!-- <div class="img-container-diff"> -->
-		<!-- <div class="ed-project-pics4"><img src="imgs/ed-site-contact-pg-small-screen.png" alt=""></div> -->
-		<!-- <div class="ed-project-pics3"><img src="imgs/ed-site-contact-pg-large-screen.png" alt=""></div> -->
-		
-		<!-- <div class="powerpoint"><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSQSTRr0p5IOB8RpvG7I_Y1DUF3UIgjtXAaBu1B63TbHWaq1zY_qhKMi5rrC0wGXg/embed?start=true&loop=true&delayms=6000000" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>	<div class="ed-project-description"></div> -->
-		<!-- </div> -->
-	<!-- </div> -->
-
-	<!-- <div class="ed-project-description margin-top"><p>This page is for Industry News, I created the setup with the links to news about a few companies Edward wanted to include. </p> -->
-	<!-- </div> -->
-	<!-- <div class="img-container"> -->
-		<!-- <div class="ed-project-pics5"><img src="imgs/ed-site-industry-news-pg-large-screen.png" alt=""></div> -->
-		<!-- <div class="ed-project-pics6"><img src="imgs/ed-site-industry-news-pg-small-screen.png" alt=""></div> -->
-	<!-- </div> -->
 
 
 </div>
 
+
+<script src="js/script.js"></script>
 </body>
 </html>
