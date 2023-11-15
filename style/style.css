@@ -293,7 +293,7 @@ div.margin-top p{
 	}
   
 	iframe, .cst-338-final-project-pp, .pdf, project-display{
-		width: 100%;
+		width: 100% !important;
 	}
 
 	.pic-of-me{
